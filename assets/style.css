@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-list ul{
+    font-size: 1.5rem;
+    display: flex;
+    margin-right: 3rem;
+    column-gap: 2rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+.banner{
+   background-image: url(/img/banner.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+    height: 80vh;
+    width: 100%;
+    
+} 
+
+.description{
+    display: flex;
+    flex-direction: row-reverse;
+}
