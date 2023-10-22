@@ -1,29 +1,82 @@
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.container-list ul{
-    font-size: 1.5rem;
-    display: flex;
-    margin-right: 3rem;
-    column-gap: 2rem;
-    list-style: none;
-    text-decoration: none;
-}
-
-.banner{
-   background-image: url(/img/banner.jpg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-    height: 80vh;
+body{
     width: 100%;
     
+    
+}
+.container{
+    margin-right: 0;
+    
+}
+ .nav-link{
+    color: black;
 } 
+.nav-link:hover{
+    text-decoration-line: overline underline;
+    color: #f0ad8e;
+    font-weight: 700;
+}
 
-.description{
+.title{
+    position: relative;
+    margin: 129px 0px 10px calc((100% - 980px) * 1);
+    left: 567px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+.carousel{
+    margin-left: 7rem;
+}
+.carousel-item{
+    height: 550px;
+} 
+.container-servicio{
+    margin-top: 5rem;
+}
+.carousel-caption{
+    left: 567px;
+    margin-bottom: 8rem;
+
+}
+.carousel-title{
+    font-size: 52px;
+    line-height: normal;
+}
+
+
+.principal-contenedor{
+    margin-top: 2rem;
+    width: 50%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+}
+
+em strong{
+    font-weight: 600;
+	color:rgb(191, 160, 119);
+}
+
+ul{ 
+    font-size: 20px;
+	display: inline-block;
+	vertical-align: top;
+	width: 20;
+	margin-right: 10%;
+    line-height: 2rem;
+}
+.imagen-diferenciales{
+	width: 60%;
+    width: 200px;
+    border-radius: 8px;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #f3d78a;
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+.items:before {
+    content: "✶";
+    color: #0284c9;
 }

@@ -1,50 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
 	<title>Salon de Belleza</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/reset.css">
+	<link rel="stylesheet" href="./assets/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <header class="">
-        <div class="container">
-			 <img src="img/img-logo.jpg" width="200px">
-		
-		<div class="container-list">
-			<ul >
-				<li><a href="index.html"> Home </a></li>
-				<li><a href="productos.html">Productos</a></li>
-				<li><a href="contacto.html"> Contacto </a></li>
-				</ul>
-		</div>
-		</div>
-	
-		
-    </header>
+
+	<header>
+		<nav class="navbar py-0 bg-white  navbar-expand-lg ">
+			<div class="container mt-0   d-flex">
+				<img class="navbar-brand pt-0 pb-0 " src="img/logo.ico" alt="">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-lg-end " id="navbarNav">
+					<ul class="navbar-nav list">
+						<li class="nav-item">
+							<a class="nav-link inicio active" aria-current="page" href="#">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Servicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Producto</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contacto</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
 	<main>
-		<div class="banner">
-			<h1>Salon de belleza</h1>
-			<!-- <img src="./img/banner.jpg" alt="imagen de banner"> -->
+		<div id="carouselExampleCaptions" class="carousel slide  mt-10  col-lg-10">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
 
-		</div>
-		<div class="description">
-			<div>
-			<h2>Sobre El Salon de Belleza</h2>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae numquam at veritatis commodi maiores.</p>
 			</div>
-			<div>
-			<img src="./img/img-2.jpg" alt="" width="200px">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/carousel1.webp" class="d-block " alt="...">
+					<div class="carousel-caption d-none d-md-block ml-0">
+						<p class="carousel-title">¡Tu nueva apariencia comienza aquí!</p>
+						<button class="mt-5 p-3 w-50 bg-black text-white btn-carousel fs-6 rounded">Reservar una cita</button>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/carrousel3.webp" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+
+					</div>
+				</div>
 			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Anterior</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Siguiente</span>
+			</button>
 		</div>
+
+		<section class="d-flex justify-content-center ">
+			<div class="principal-contenedor">
+				<h2 class=" mt-5 d-flex justify-content-center fs-3 text-warning">¡Bienvenidos al Beauty!</h2>
+				<p class="mt-3 align-items-center text-center fs-5" id="mision"> <em> Nuestra misión es:<strong> "Proporcionar autoestima y
+							calidad de vida a nuestros
+							clientes"</strong></em> </p>
+			</div>
+		</section>
+
+		<section class="container-servicio  ">
+			<div class="d-flex gap-5 bg-black justify-content-center ">
+				<div class="card border-0 mt-5 " style="width: 18rem;">
+					<img src="img/img-1.jpg" class="card-img-top" alt="...">
+					<div class="card-body bg-black ">
+						<p class="text-white d-flex justify-content-center fs-5 lh-sm ">Cortes</p>
+						<p class="card-text text-white mt-3 text-center ">Renueva tu look de la mano de nuestros mejores
+							estilistas.
+
+						</p>
+					</div>
+				</div>
+				<div class="card border-0 mt-5" style="width: 18rem;">
+					<img src="img/imgS-2.jpg" class="card-img-top h-auto " alt="...">
+					<div class="card-body bg-black ">
+						<p class="text-white d-flex justify-content-center fs-5  ">Color</p>
+						<p class="card-text text-white mt-3 text-center lh-sm">Date un capricho con nuestros servicios y
+							tratamientos capilares
+							premium.</p>
+					</div>
+				</div>
+				<div class="card mt-5 border-0" style="width: 18rem;">
+					<img src="img/imgS-3.jpeg" class="card-img-top" alt="...">
+					<div class="card-body bg-black ">
+						<p class="text-white d-flex justify-content-center fs-5 lh-sm">Peinados</p>
+						<p class="card-text text-white mt-3 text-center">Disfruta de los peinados de tendencia de la
+							mano del mejor equipo de estilistas</p>
+					</div>
+				</div>
+
+			</div>
+
+			</div>
+		</section>
+
+
+		<section class="mt-5 ">
+			<h3 class="d-flex justify-content-center fs-3 text-warning"> Diferenciales</h3>
+			<div class="d-flex justify-content-center mt-5">
+				<ul class="lista-diferenciales">
+					<li class="items fst-italic"> Atencion personalizada para los clientes </li>
+					<li class="items fst-italic"> Espacio diferenciado </li>
+					<li class="items fst-italic"> Localizacion </li>
+					<li class="items fst-italic"> Profesionales calificados </li>
+					<li class="items fst-italic"> Puntualidad </li>
+					<li class="items fst-italic"> Limpieza </li>
+				</ul><img src="img/img-2jpg" class="imagen-diferenciales">
+			</div>
+		</section>
+
+		<section class=" mt-5 d-flex justify-content-center ">
+			<div class="d-flex flex-column justify-content-center ">
+				<h3 class="d-flex justify-content-center fs-3 text-warning">Nuestra Ubicacion</h3>
+				<p class=" d-flex justify-content-center mt-3 fs-5">Nuestro establecimiento esta ubicado en el corazon
+					de la peatonal</p>
+				<div class=" mt-5 mb-5 ">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1639.7121412898755!2d-58.25625196139262!3d-34.719698288589335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32fc459354cb9%3A0x72e01b5fbb0b83bd!2sQue%20B%C3%A1rbara*21!5e0!3m2!1ses-419!2sar!4v1697768519202!5m2!1ses-419!2sar"
+						width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+
+		</section>
 	</main>
+	<footer class="d-flex flex-row align-items-center  justify-content-around bg-light ">
+		<img src="img/logo.ico">
 
-
-<footer>
-	<h6>Horarios</h6>
-	<p>Desarrollado por Lourdes Avalos </p>
-</footer>
+		<p class="fs-4"> &copy Desarrollado por Lourdes Avalos - 2023 </p>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+	</script>
 </body>
+
 </html>
