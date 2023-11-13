@@ -7,7 +7,6 @@
 Nuestra misión es: "Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>
 </p>
 <br>
-<h2 align="center">Nuestros servicios 
 <img align="center" src="./img/img-servicio.png">
 
 
