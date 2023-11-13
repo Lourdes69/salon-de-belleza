@@ -1,13 +1,13 @@
 # Salón de Belleza - Peluqueria
 <img align="center" src="./img/img-salon.png">
 
-<hr/>
+<br/>
 <p align="center">
-<strong>"¡Bienvenidos al Beauty! <hr/>
+<strong>"¡Bienvenidos al Beauty! <br>
 Nuestra misión es: "Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>
 </p>
-<hr/>
-#### Nuestros servicios 
+<br>
+<h2 align="center">Nuestros servicios 
 <img align="center" src="./img/img-servicio.png">
 
 
@@ -15,10 +15,14 @@ Nuestra misión es: "Proporcionar autoestima y calidad de vida a nuestros client
 <h3 align="center" style="color: #D39245;
 "><a https:"//lourdes69.github.io/salon-de-belleza/" rel="noopener noreferrer"> Beauty</a></h3>
 
-<hr/>
+<br/>
 
-### 👉🏻 Tecnologías usadas: 🛠️
-https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
-https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
-https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
-https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+### 👉🏻 Tecnologías usadas: 
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScrip</li>
+<li>Bootstrap</li>
+</ul>
+
+
