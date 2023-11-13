@@ -9,7 +9,9 @@
 		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link rel="stylesheet" href="./assets/reset.css">
 	<link rel="stylesheet" href="./assets/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
 </head>
 
@@ -18,7 +20,7 @@
 	<header>
 		<nav class="navbar py-0 bg-white  navbar-expand-lg ">
 			<div class="container mt-0   d-flex">
-				<img class="navbar-brand pt-0 pb-0 " src="img/logo.ico" alt="">
+				<img class="navbar-brand pt-0 pb-0" src="img/logo.ico" alt="">
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -26,16 +28,13 @@
 				<div class="collapse navbar-collapse justify-content-lg-end " id="navbarNav">
 					<ul class="navbar-nav list">
 						<li class="nav-item">
-							<a class="nav-link inicio active" aria-current="page" href="#">Inicio</a>
+							<a class="nav-link inicio active" aria-current="page" href=>Inicio</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Servicio</a>
+							<a class="nav-link" href="/servicios.html">Servicio</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Producto</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contacto</a>
+							<a class="nav-link" href="#contacto">Contacto</a>
 						</li>
 
 					</ul>
@@ -43,90 +42,78 @@
 			</div>
 		</nav>
 	</header>
-	<main>
+	<main class="main-container">
 		<div id="carouselExampleCaptions" class="carousel slide  mt-10  col-lg-10">
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-					aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-					aria-label="Slide 2"></button>
-
-			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="img/carousel1.webp" class="d-block " alt="...">
-					<div class="carousel-caption d-none d-md-block ml-0">
+					<img src="img/carousel1.webp" class="d-block carousel-img" alt="...">
+					<div class="carousel-caption d-none d-md-block ml-0  ">
 						<p class="carousel-title">¡Tu nueva apariencia comienza aquí!</p>
-						<button class="mt-5 p-3 w-50 bg-black text-white btn-carousel fs-6 rounded">Reservar una cita</button>
+					<a href="#contacto"><button type="button" class="mt-5 btn-reservar  p-3 w-50   fs-6 ">Reservar una
+							cita</button></a>
 					</div>
 				</div>
-				<div class="carousel-item">
-					<img src="img/carrousel3.webp" class="d-block w-100" alt="...">
-					<div class="carousel-caption d-none d-md-block">
-
-					</div>
-				</div>
+				
 			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-				data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Anterior</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-				data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Siguiente</span>
-			</button>
+			
 		</div>
 
 		<section class="d-flex justify-content-center ">
 			<div class="principal-contenedor">
 				<h2 class=" mt-5 d-flex justify-content-center fs-3 text-warning">¡Bienvenidos al Beauty!</h2>
-				<p class="mt-3 align-items-center text-center fs-5" id="mision"> <em> Nuestra misión es:<strong> "Proporcionar autoestima y
+				<p class="mt-3 align-items-center text-center fs-5" id="mision"> <em> Nuestra misión es:<strong>
+							"Proporcionar autoestima y
 							calidad de vida a nuestros
 							clientes"</strong></em> </p>
 			</div>
 		</section>
 
 		<section class="container-servicio  ">
-			<div class="d-flex gap-5 bg-black justify-content-center ">
-				<div class="card border-0 mt-5 " style="width: 18rem;">
-					<img src="img/img-1.jpg" class="card-img-top" alt="...">
-					<div class="card-body bg-black ">
-						<p class="text-white d-flex justify-content-center fs-5 lh-sm ">Cortes</p>
-						<p class="card-text text-white mt-3 text-center ">Renueva tu look de la mano de nuestros mejores
-							estilistas.
+			<div class="d-flex flex-column  gap-5 bg-black justify-content-center ">
+				<div class="d-flex flex-column align-items-center   gap-5 justify-content-center flex-lg-row flex-md-row ">
+					<div class="card border-0 mt-5 " style="width: 18rem;">
+						<img src="img/img-1.jpg" class="card-img-top" alt="...">
+						<div class="card-body bg-black ">
+							<p class="text-white d-flex justify-content-center fs-5  ">Cortes</p>
+							<p class="card-text text-white mt-3 text-center lh-base ">Renueva tu look de la mano de
+								nuestros
+								mejores
+								estilistas.
 
-						</p>
+							</p>
+						</div>
+					</div>
+					<div class="card border-0 mt-5" style="width: 18rem;">
+						<img src="img/imgS-2.jpg" class="card-img-top h-auto " alt="...">
+						<div class="card-body bg-black ">
+							<p class="text-white d-flex justify-content-center fs-5  ">Color</p>
+							<p class="card-text text-white mt-3 text-center lh-base">Date un capricho con nuestros
+								servicios y
+								tratamientos capilares
+								premium.</p>
+						</div>
+					</div>
+					<div class="card mt-5 border-0" style="width: 18rem;">
+						<img src="img/imgS-3.jpeg" class="card-img-top" alt="...">
+						<div class="card-body bg-black ">
+							<p class="text-white d-flex justify-content-center fs-5">Peinados</p>
+							<p class="card-text text-white mt-3 text-center lh-base ">Disfruta de los peinados de
+								tendencia de la
+								mano del mejor equipo de estilistas</p>
+						</div>
 					</div>
 				</div>
-				<div class="card border-0 mt-5" style="width: 18rem;">
-					<img src="img/imgS-2.jpg" class="card-img-top h-auto " alt="...">
-					<div class="card-body bg-black ">
-						<p class="text-white d-flex justify-content-center fs-5  ">Color</p>
-						<p class="card-text text-white mt-3 text-center lh-sm">Date un capricho con nuestros servicios y
-							tratamientos capilares
-							premium.</p>
-					</div>
+				<div class="text-center fs-5 mb-5">
+				<button id="servicio" type="button" class="p-3  btn-servicio">Ver servicios</button>
 				</div>
-				<div class="card mt-5 border-0" style="width: 18rem;">
-					<img src="img/imgS-3.jpeg" class="card-img-top" alt="...">
-					<div class="card-body bg-black ">
-						<p class="text-white d-flex justify-content-center fs-5 lh-sm">Peinados</p>
-						<p class="card-text text-white mt-3 text-center">Disfruta de los peinados de tendencia de la
-							mano del mejor equipo de estilistas</p>
-					</div>
-				</div>
-
 			</div>
-
 			</div>
 		</section>
 
 
 		<section class="mt-5 ">
-			<h3 class="d-flex justify-content-center fs-3 text-warning"> Diferenciales</h3>
-			<div class="d-flex justify-content-center mt-5">
+			<h3 class="d-flex justify-content-center fs-3 text-warning"> Por qué elegirnos</h3>
+			<div class="d-flex justify-content-center mt-5 flex-wrap">
 				<ul class="lista-diferenciales">
 					<li class="items fst-italic"> Atencion personalizada para los clientes </li>
 					<li class="items fst-italic"> Espacio diferenciado </li>
@@ -134,30 +121,104 @@
 					<li class="items fst-italic"> Profesionales calificados </li>
 					<li class="items fst-italic"> Puntualidad </li>
 					<li class="items fst-italic"> Limpieza </li>
-				</ul><img src="img/img-2jpg" class="imagen-diferenciales">
+				</ul>
+				
+
+			
+				<img src="img/img-2.jpg" class="imagen-diferenciales">
 			</div>
 		</section>
 
 		<section class=" mt-5 d-flex justify-content-center ">
-			<div class="d-flex flex-column justify-content-center ">
-				<h3 class="d-flex justify-content-center fs-3 text-warning">Nuestra Ubicacion</h3>
-				<p class=" d-flex justify-content-center mt-3 fs-5">Nuestro establecimiento esta ubicado en el corazon
-					de la peatonal</p>
-				<div class=" mt-5 mb-5 ">
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1639.7121412898755!2d-58.25625196139262!3d-34.719698288589335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32fc459354cb9%3A0x72e01b5fbb0b83bd!2sQue%20B%C3%A1rbara*21!5e0!3m2!1ses-419!2sar!4v1697768519202!5m2!1ses-419!2sar"
-						width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
+			<div class=" mt-5  ">
+				<iframe 
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104916.14137571331!2d-58.35320507042187!3d-34.73973433297766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e40864ce019%3A0xb46bf0e5f8abafc6!2sQuilmes%20Peatonal!5e0!3m2!1ses-419!2sar!4v1699239361004!5m2!1ses-419!2sar" 
+				width="1250" height="500" style="border:0;" 
+				allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+				</iframe>
 			</div>
-
 		</section>
 	</main>
-	<footer class="d-flex flex-row align-items-center  justify-content-around bg-light ">
-		<img src="img/logo.ico">
 
-		<p class="fs-4"> &copy Desarrollado por Lourdes Avalos - 2023 </p>
+	<!-- Footer -->
+	<footer>
+		<section class="footer-container">
+			<div class="d-flex text-center flex-column  ml-5 justify-content-around flex-lg-row  ">
+				<div class="col-md-5 d-flex flex-column gap-5 ">
+					<div class="text-center">
+						<h6 class="text-center fs-4 text-white mt-5">¡Visitanos!</h6>
+						<p class="mt-4 lh-base footer-title text-center  ">Conocé nuestro salón ubicado en Av. Mitre 217
+							Quilmes, Provincia de Buenos Aires</p>
+						<div class="footer-border">
+						</div>
+
+						<p class="mt-5 lh-base footer-title text-center ">LUNES A SÁBADOS
+							<br> &#128344; 09:30hs - 19:00hs
+						</p>
+
+					</div>
+
+					<div class="lh-base text-center ">
+						<h6 class="footer-title fs-5">¡Seguinos en las redes!</h6>
+						<svg class="footer-title m-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+							fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+							<path
+								d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+						</svg>
+						<svg class="footer-title" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+							fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+							<path
+								d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+						</svg>
+					</div>
+				</div>
+				<div  class="">
+					<h5 id="contacto" class=" fs-4 text-center text-white mt-5 ">Contactanos</h5>
+
+					<form class="mt-4 d-flex flex-column " id="form" method="POST">
+						<div class="input-container">
+							<input class="form-input" type="text" id="nombre" name="nombre" required
+								placeholder="Nombre" data-tipo="nombre">
+							<span class="input-message-error">Este campo no es valido</span>
+						</div>
+
+						<div class="form-field-wrapper input-container">
+							<input class="form-input" type="email" id="email" name="email" required placeholder="Email"
+								data-tipo="email">
+							<span class="input-message-error">Este campo no es valido</span>
+						</div>
+
+						<div class="form-field-wrapper input-container">
+							<input class="form-input" type="tel" id="telefono" name="telefono" placeholder="Teléfono"
+								required pattern="\d{10}" minlegth="10" maxlength="10" data-tipo="numero">
+							<span class="input-message-error">Este campo no es valido</span>
+						</div>
+
+						<div class="form-field-wrapper">
+							<textarea class="text-mensaje " id="mensaje" name="mensaje" required
+								placeholder="Mensaje"></textarea>
+						</div>
+						<fieldset class="text-lg-start">
+							<legend class="text-white mt-2  ">¿En cual horario prefiere ser atendido?</legend>
+							<select class="mt-3 mb-2 select-option  ">
+								<option>Mañana</option>
+								<option>Tarde</option>
+								<option>Noche</option>
+							</select>
+						</fieldset>
+
+						<div class="form-field-wrapper d-flex justify-content-center justify-content-lg-start">
+							<button class="d-flex flex-column mt-3 mb-3  boton-enviar text-white mb-lg-5 " type="submit">Enviar
+								Mensaje</button>
+						</div>
+					</form>
+				</div>
+		</section>
+	
+			<h5 class="copy fs-5 text-center ">&#169;Desarrollado por Lourdes Avalos </h5>
+		
 	</footer>
+	<script src="./js/app.js" type="module"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
 	</script>
