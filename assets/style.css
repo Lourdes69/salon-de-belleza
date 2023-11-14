@@ -10,11 +10,9 @@ body{
 }
 .navbar-toggler{
  margin-right: 2rem;
+
 }
-.container{
-    margin-right: 0;
-    
-}
+
  .nav-link{
     color: black;
 } 
@@ -26,14 +24,6 @@ body{
 .main-container{
     overflow: hidden;
 }
-/* .title{
-    position: relative;
-    margin: 129px 0px 10px calc((100% - 980px) * 1);
-    left: 567px;
-    grid-area: 1 / 1 / 2 / 2;
-    justify-self: start;
-    align-self: start;
-} */
 
 .carousel{
     margin-left: 7rem;
@@ -55,6 +45,7 @@ body{
 .btn-reservar{
     background-color: black;
     color: white;
+    font-size: 16px;
 }
 .btn-reservar:hover{
     background-color: transparent;
@@ -104,16 +95,6 @@ ul{
     height: 290px;
     animation: slide 5s linear 1 forwards;
 }
-/* }
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100px); /* Ajusta la distancia  */
-  
-
-  
 
 .items:first-child {
     font-weight: bold;
@@ -121,25 +102,7 @@ ul{
 .items:before {
     content: "✶";
     color: #836d1a;
-/* }
-.lista-diferenciales li {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.2s, transform 0.2s;
-    animation: fadeIn 2s linear 1 forwards; /* 1 vez y conserva el estado final */
-  }
-/*   
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  } */
-  
+}
   
   
 /*Footer*/
@@ -250,6 +213,7 @@ border-radius: 4px;
     background-color: #f3d78a;
     padding: 1rem;
 }
+  
 
 /* estilos de la Pagina de servicios */
 .servicio-title{
@@ -275,6 +239,7 @@ border-radius: 4px;
 }
 
 
+/* tablet */
 
 @media only screen and (max-width: 768px){
        
@@ -292,8 +257,7 @@ border-radius: 4px;
 .carousel-caption {
     margin-bottom: 3rem;
     display: block !important;
-    width: 50%;
-    margin-left: 200px;
+    left: 300px;
 }
 
 .form-input {
@@ -313,8 +277,26 @@ border-radius: 4px;
     padding: 5px 10px;
     border-radius: 2px;
     }
-    
+    .btn-reservar{
+        font-size: 14px;
+        
+    }
 }
+
+/* Mobie */
+@media only screen and (max-width: 500px){
+    
+.carousel-caption {
+    margin-bottom: 1rem;
+    display: block !important;
+    left: 220px;
+}
+
+.carousel-title {
+    font-size: 18px;
+}
+}
+
 
 
 

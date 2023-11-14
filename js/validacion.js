@@ -44,6 +44,8 @@ export function valida(input) {
         }
     })
     return mensaje;
-  }
+  };
+ 
+  
   
   
